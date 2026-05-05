@@ -30,7 +30,7 @@ function ajouterbalise(balise){
 ajouterbalise("<h1>coucou</h1>")
 ajouterbalise("<p> on est trop fort en js </p>")
 
-function afficher addition(afficher, b){
+function afficheraddition(afficher, b){
     ajouterbalise(`<p> ${a+b} </p>`)
 }
 afficheraddition(7,5)
@@ -43,6 +43,49 @@ function afficherprenom(prenom){
 }
 afficherprenom("david")
 
-function question("quel temps fait t'il aujourd'hui"){
-    prompt
+// role : poser une question
+// parametre : la question a poser
+// return : la reponse 
+
+function poseQuestion(question){
+
+    return prompt(question)
 }
+
+let rep = poseQuestion("le ciel est il bleu ?")
+
+console.log(rep)
+function convertion(prix, taux){
+    return prix * taux
+}
+let resultat = convertion(3, 1.17)
+console.log(`le prix convertir est de ${resultat} dollars`)
+
+//role demander un prix et un taux de change a l'utulisateur et convertir le prix
+// parametre prix et taux de change
+// return prix convertir
+
+function convertisseur(){
+    //demander le prix a convertir
+    let prix = parseFloat(prompt("quel prix veux tu convertir"))
+
+    //demander le taux
+    let taux = parseFloat(prompt("a quel taux"))
+
+    //convertit
+    return prix * taux
+
+    //resultat
+}
+let prixconvertit=convertisseur()
+alert(`le prix convertit est de ${prixconvertit} dollars`)
+
+function moyenne(){
+    let moyennefrancais = parseFloat(prompt("quel est la moyenne de francais"))
+    let moyennemath = parseFloat(prompt("quel est la moyenne de math"))
+    let moyennehistoire = parseFloat(prompt("quel est la moyenne de histoire"))
+    let moyennesvt = parseFloat(prompt("quel est la moyenne de svt"))
+    return (moyennefrancais+moyennemath+moyennehistoire+moyennesvt)/4
+}
+let tmoyenne = moyenne()
+alert(`la moyenne est ${tmoyenne}`)
