@@ -76,7 +76,7 @@ function feutricolor (){
     }else
         console.log("danger, feu defectueux")
 }
-*/
+
 function moyennegeneral(francais, math, anglais, histoire) {
     return (francais + math + anglais + histoire) / 4
 }
@@ -93,5 +93,12 @@ function commentaire(moyennegeneral) {
         return("bravo")
     } else if (moyennegeneral > 17) {
         return("excellent")
+    }
+}*/
+function multiplication(chiffreAmultiplier){
+    for(let i=1; i<10 ; i++){
+
+        chiffreAmultiplier*i
+
     }
 }
