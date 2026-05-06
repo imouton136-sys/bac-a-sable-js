@@ -64,7 +64,7 @@ if (age >= 18){
     console.log("Reduction refuse")
 }
 
-*/
+
 function feutricolor (){
     let reponseutilisateur = prompt("de quel couleur est le feu")
     if(reponseutilisateur == "rouge"){
@@ -75,4 +75,23 @@ function feutricolor (){
         console.log("je freine")
     }else
         console.log("danger, feu defectueux")
+}
+*/
+function moyennegeneral(francais, math, anglais, histoire) {
+    return (francais + math + anglais + histoire) / 4
+}
+console.log(`la moyenne est de ${moyennegeneral(8, 12, 5, 20)}`)
+
+function commentaire(moyennegeneral) {
+    if (moyennegeneral < 10) {
+        return("il faut travailler plus")
+    } else if (moyennegeneral > 10 && moyennegeneral <13) {
+        return("poursuivez vos efforts")
+    } else if (moyennegeneral > 13 && moyennegeneral <15) {
+        return("Bon tavail")
+    } else if (moyennegeneral > 15 && moyennegeneral <17) {
+        return("bravo")
+    } else if (moyennegeneral > 17) {
+        return("excellent")
+    }
 }
