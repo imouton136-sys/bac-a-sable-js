@@ -94,7 +94,7 @@ function commentaire(moyennegeneral) {
     } else if (moyennegeneral > 17) {
         return("excellent")
     }
-}*/
+}
 function multiplication(chiffreAmultiplier){
     for(let i=1; i<10 ; i++){
 
@@ -102,3 +102,65 @@ function multiplication(chiffreAmultiplier){
 
     }
 }
+function punition(){
+    for(let i = 1; i<=50; i++){
+        console.log("i will not waste chalk")
+    }
+}
+function epele(mot){
+    for(let i = 0; i=mot.length; i++){
+        console.log(mot.charAt(i))
+    }
+}
+let panier = ["banane", "pomme", "orange", "poire", "raisin", litchi]
+console.log (`le premier fruit de panier est ${fruit[0]}`)
+function moyenne(notes){
+    let somme = 0; 
+    notes.forEach(note => {
+        somme = somme +note;
+    });
+    let moyenne = somme/notes.lenth
+    return moyenne
+}
+*/
+let calcul = [8, 12]
+function additionner(nombre) {
+    let addition = calcul
+    return addition
+}
+let fruits = ["cerises", "pommes", "cerises", "pommes", "poires", "bananes",
+    "pommes", "poires", "cerises"];
+let pommes = 0
+let cerises = 0
+let poires = 0
+//role calculer le nombre de pomme cerise et poire
+//parametre panier de fruit
+//return affiche
+function compte(panierfruit) {
+ 
+    panierfruit.forEach(fruit => {
+
+        if(fruit === "pommes"){
+            pommes++
+        }else if (fruit === "poires"){
+            poires++
+        }else if (fruit === "cerises")
+            cerises++
+      
+    });
+    console.log(`il y a ${pommes} pommes, ${poires} poires, ${cerises} cerises`)
+    
+}
+compte(fruits)
+let lettre = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+
+//role: encoder le mot
+//parametre: le mot
+// retour le nouveau mot
+function code(mot){
+    for(let i = i=0, i<mot.length, i++){
+        return(mot.length+1, lettre)
+    }
+}
+console.log()

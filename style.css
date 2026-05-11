@@ -1,0 +1,22 @@
+.bg-blue{
+    background-color: blue;
+}
+.text-white{
+    color: white;
+}
+.mb50{
+    margin-bottom: 50px
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.space-between{
+    justify-content: space-between
+}
+.w30{
+    width: 30%
+}
+.text-center{
+    text-align: center;
+}
